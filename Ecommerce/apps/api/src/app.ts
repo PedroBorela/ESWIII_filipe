@@ -9,6 +9,8 @@ import detalhesproduto from "./route/produtos";
 
 // Importando a rota de categorias de produtos
 import cateogoriasprodutos from "./route/categorias";
+// Importando a rota de usuários
+import usuarios from "./route/usuarios";
 
 const app = express();
 
@@ -25,5 +27,8 @@ app.use(detalhesproduto);
 
 // Configurando a rota de categorias de produtos
 app.use(cateogoriasprodutos);
+
+// Configurando a rota de usuários
+app.use(usuarios);
 
 export default app;
